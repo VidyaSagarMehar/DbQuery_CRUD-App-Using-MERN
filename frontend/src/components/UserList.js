@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-export const UserList = () => {
-	const [userData, setUserData] = useState(null);
+export const UserList = ({ userData, fetchUsersData, BASE_URL }) => {
+	// const [userData, setUserData] = useState(null);
 
-	const fetchUserData = async () => {
-		const resp = await axios.get(`${BASE_URL}/getUsers`);
-		console.log(resp);
+	// const fetchUserData = async () => {
+	// 	const resp = await axios.get(`${BASE_URL}/getUsers`);
+	// 	console.log(resp);
 
-		// if no user are there please dont set the value
-		if (resp.data.users.length > 0) {
-			setUserData(resp.data.users);
-		}
-	};
+	// 	// if no user are there please dont set the value
+	// 	if (resp.data.users.length > 0) {
+	// 		setUserData(resp.data.users);
+	// 	}
+	// };
 
-	useEffect(() => {
-		fetchUserData();
-	}, [userData]);
+	// useEffect(() => {
+	// 	fetchUserData();
+	// }, [userData]);
 
 	// TO EDIT
 	const handleEdit = async (user) => {
