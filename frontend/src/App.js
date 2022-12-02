@@ -1,6 +1,7 @@
+import { useEffect, useState } from 'react';
 import './App.css';
 import { Form } from './components/Form';
-import { UserList } from './components/UserList';
+import { UsersList } from './components/UsersList';
 import './index.css';
 import axios from 'axios';
 
@@ -20,9 +21,9 @@ function App() {
 	return (
 		<div className="App">
 			{/* Form Component */}
-			<Form fetchUserData={fetchUsersData} BASE_URL={BASE_URL} />
+			<Form fetchUsersData={fetchUsersData} BASE_URL={BASE_URL} />
 			{/* All users list */}
-			<UserList
+			<UsersList
 				userData={userData}
 				setUserData={setUserData}
 				fetchUsersData={fetchUsersData}

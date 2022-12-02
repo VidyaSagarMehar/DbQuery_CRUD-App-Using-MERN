@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import axios from 'axios';
 
-export const UserList = ({ userData, BASE_URL }) => {
+export const UsersList = ({ userData, BASE_URL }) => {
 	// const [userData, setUserData] = useState(null);
 
 	// const fetchUserData = async () => {
