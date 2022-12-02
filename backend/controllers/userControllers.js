@@ -2,7 +2,7 @@
 const User = require('../models/userModel');
 
 exports.home = (req, res) => {
-	res.send('Hello from Live Class 19 nov');
+	res.send('Hello from CRUD user app');
 };
 
 exports.createUser = async (req, res) => {
