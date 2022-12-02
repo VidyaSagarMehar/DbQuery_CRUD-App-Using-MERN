@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-export const UserList = ({}) => {
+export const UserList = () => {
 	const [userData, setUserData] = useState(null);
 
 	const fetchUserData = async () => {
