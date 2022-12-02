@@ -20,16 +20,14 @@ function App() {
 	return (
 		<div className="App">
 			{/* Form Component */}
-			<Form fetchUsersData={fetchUsersData} BASE_URL={BASE_URL} />
+			<Form fetchUserData={fetchUsersData} BASE_URL={BASE_URL} />
 			{/* All users list */}
-			<UsersList
+			<UserList
 				userData={userData}
 				setUserData={setUserData}
 				fetchUsersData={fetchUsersData}
 				BASE_URL={BASE_URL}
 			/>
-
-			<Toaster />
 		</div>
 	);
 }
