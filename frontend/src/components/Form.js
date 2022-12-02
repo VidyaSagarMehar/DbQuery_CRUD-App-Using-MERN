@@ -13,7 +13,7 @@ export const Form = () => {
 			name: userName,
 			email: userEmail,
 		};
-		const res = await axios.post('/createUser', data);
+		const res = await axios.post('BASE_URL/createUser', data);
 		console.log(res);
 	};
 
